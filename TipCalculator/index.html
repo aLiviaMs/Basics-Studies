@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="faviconPixelArt/favicon.ico" type="image/x-icon"> 
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 id="title">Tip Calculator</h1>
+        </div>
+        <div>
+            <form class="tipsForm" id="tipsForm">
+                <label for="bill">
+                    <p>How much cash did you spend?</p>
+                </label>
+                <p>$ <input type="number" placeholder="100$" name="bill" id="bill" required></p>
+                <label for="serviceQual">
+                    <p>Rate the service and give an appropriate compensation</p>
+                    <p>
+                        <select name="serviceQual" id="serviceQual">
+                        <option value=0 disabled selected>Choose an option</option>
+                        <option value="0.3">Amazing - 30% tip</option>
+                        <option value="0.2">Good - 20% tip</option>
+                        <option value="0.15">OK - 15% tip</option>
+                        <option value="0.1">Bad - 10% tip</option>
+                        <option value="0.05">Horrible - 5% tip</option>
+                        </select>
+                    </p>
+                </label>
+                <p>
+                    <label for="people">
+                        <p>How many people are going to pay the bill?</p>
+                    </label>
+                </p>
+                <input type="number" placeholder="1" name="people" id="people" required> person/people
+                <button type="submit" id="formSubmit">Compute</button>
+                
+            </form>
+            <div id="totalTip">
+               Total Tip: $<span id="tip"> 0.00 </span>
+                <span id="eachP"> to each person </span>
+            </div>
+            <div>
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i> <img src="https://i.ibb.co/LS5F1n4/moon.png" alt="dark" width="23"></i>
+                    <i><img src="https://i.ibb.co/6R8WCCP/sun.png" alt="light" width="21"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scriptCalculate.js"></script>
+    <script type="text/javascript" src="scriptChangeTheme.js"></script>
+</body>
+</html>

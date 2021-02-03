@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans: 300,400,700|PT++Mono');
+
+:root {
+    --lightTheme:#F7DFDF;
+    --darkTheme: #000000;
+    --lightShadows:#BFBFBF;
+    --darkShadows: #121212;
+    --darkThemeBox-color: #292828;
+    --lightThemeBox-color: #FFFFFF;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--lightTheme);
+    color: black;
+    font-size: 15px;
+    font-family: Josefin Sans, sans-serif;
+    transition: background 0.4s linear;
+}
+
+body.dark {
+    background-color: var(--darkTheme);
+    color: white;
+}
+
+.label {
+    margin: 40px auto;
+    display: flex;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: space-between;
+    height: 26px;
+    width: 50px;
+    position: relative;
+    background-color: rgb(54, 54, 54);
+    padding: 2px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translate(24px);
+}
+
+.ball {
+    border-radius: 50px;
+    position: absolute;
+    left: 2px;
+    background-color: #FFFFFF;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.4s linear;
+}
+
+#title {
+    background: var(--lightShadows);
+    color: #9e9d9d;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+#title.dark {
+    background: var(--darkShadows);
+    color: #8c3dee;
+}
+
+#container {
+    height: 400px;
+    width: 360px;
+    margin: 100px auto;
+    background: var(--lightThemeBox-color);
+    box-shadow: 5px 5px 5px var(--lightShadows);
+    border-radius: 20px;
+    transition: all 0.4s linear;
+}
+
+#container.dark {
+    background: var(--darkThemeBox-color);
+    box-shadow: 5px 5px 5px var(--darkShadows);
+}
+
+#bill {
+    width: 45px;
+    padding: 2px 0px 2px 3px;
+    transition: background 0.4s linear;
+}
+
+#bill.dark {
+    background: #d7d9fc;
+}
+
+#bill:focus {
+    border: 2px solid #786C6C;
+    outline: none;
+}
+
+#bill.dark:focus {
+    border: 2px solid #3700B3;
+}
+
+#people {
+    width: 45px;
+    padding: 2px 0px 2px 3px;
+    transition: background 0.4s linear;
+}
+
+#people.dark {
+    background: #d7d9fc;
+}
+
+#people:focus {
+    border: 2px solid #786C6C;
+    outline: none;
+}
+
+#people.dark:focus {
+    border: 2px solid #3700B3;
+}
+
+#serviceQual{
+    width: 140px;
+    padding: 4px;
+    transition: background 0.4s linear;
+}
+
+#serviceQual.dark {
+    background: #d7d9fc;
+}
+
+#serviceQual:focus {
+    border: 2px solid #786C6C;
+}
+
+#serviceQual.dark:focus {
+    border: 2px solid #3700B3;
+}
+
+#formSubmit{
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: block;
+    margin: 20px auto;
+    background: var(--lightTheme);
+    font-size: 16px;
+    border-radius: 7px;
+    width: 100px;
+    height: 25px;
+    color: #786C6C;
+    transition: background 0.4s linear;
+}
+
+#formSubmit.dark {
+    background: var(--darkShadows);
+    color: #8c3dee;
+}
+
+#tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: #000;
+}
+
+#totalTip.dark{
+    color: #FFFFFF;
+}
+
+

@@ -1,10 +1,10 @@
 # Responsive Layout with FlexBox
-<p>The Layout on Pc</p>
+<h1>The Layout on Pc</h1>
 
 ![The website on Pc](images/Gif/WebSiteDemonstration-min.gif)
 
 <br>
 
-<p>The Layout on Mobile</p>
+<h1>The Layout on Mobile</h1>
 
 ![The website on Mobile](images/Gif/mobile.gif)

@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+}
+ul,nav{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(2, 2, 2, 0.281);
+    padding: 20px 30px;
+}
+header h2{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+header nav {
+    margin-left: 3%;
+    display: flex;
+    text-align: center;
+}
+header nav li{
+    margin: 0px 15px;
+}
+header nav li:last-child{
+    margin-left: 110vh;
+}
+.load{
+    animation: slide 2s;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slideBg 20s infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(imgs/wallpaper01.jpg);    
+
+}
+.content{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.main{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.main h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.main h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+@keyframes slideBg {
+    20%{
+        background-image: url(imgs/wallpaper01.jpg);
+    }
+    40%{
+        background-image: url(imgs/wallpaper02.jpg);
+    }
+    60%{
+        background-image: url(imgs/wallpaper03.png);
+    }
+    80%{
+        background-image: url(imgs/wallpaper02.jpg);
+    }
+    100%{
+        background-image: url(imgs/wallpaper01.jpg);
+    }
+}
+.btn{
+    padding: 15px 35px;
+    background: #3700b3;
+    opacity: 100%;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#nav-a:hover::after{
+    width: 100%;
+}
+#nav-a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #3700b3;
+    transition: width .3s;
+}
+
+/* register page */
+#cover{
+    background-color: #010101;
+}
+#title{
+    color: #fff;
+    font-size: 45px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.container{
+    background-color: #121212;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 20vh;
+    text-align: center;
+    border-radius: 2%;
+}
+.formRegister{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+input{
+    border-bottom: 2px solid #7579e7;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+input:focus{
+    border-bottom: 2px solid #3700b3;
+}
+label,input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+input[type="submit"]{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #6165e6;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #4b4fd3;
+    transition: .6s;
+}
+.login-container{
+    color: #fff;
+}
+.login-container p{
+    font-size: 20px;
+}
+.login-container a{
+    color: #6165e6;
+}
+.login-container a:hover{
+    color: #8387ff;
+}

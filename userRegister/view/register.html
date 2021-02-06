@@ -13,10 +13,10 @@
         <div>
             <form class="formRegister" id="form">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite o seu Email" autocomplete="off">
+                <input type="email" name="email" id="emailId" placeholder="Digite o seu Email" autocomplete="off">
                 <label for="password">Senha</label>
                 <input type="password" name="password" id="password" placeholder="Crie uma senha">
-                <input type="submit" value="Cadastrar" id="submit-btn"  onClick="validatePassword(password);">
+                <input type="submit" value="Cadastrar" id="submit-btn"  onClick="validadeRegister();">
             </form>
         </div>
         <div class="login-container">
@@ -24,7 +24,13 @@
             <a href="#">Entrar na conta</a>
         </div>
     </div>
+    <div class="modal-sucess" id="modal-sucess">
+        <div class="modal">
+            <h1>Cadastro Realizado</h1>
+            <p>O seu cadastro foi efetuado com sucesso</p>
+            <button id="close">Fechar</button>
+        </div>
+    </div>
     <script type="text/javascript" src="../javascript/register.js"></script>
 </body>
 </html>
-

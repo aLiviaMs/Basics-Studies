@@ -97,10 +97,13 @@ header nav li:last-child{
 .btn{
     padding: 15px 35px;
     background: #3700b3;
-    opacity: 100%;
     border-radius: 100px;
     text-transform: uppercase;
     font-weight: bold;
+}
+.btn:hover{
+    background: #2a0385;
+    transition: .4s;
 }
 #nav-a:hover::after{
     width: 100%;
@@ -192,4 +195,48 @@ input[type="submit"]:hover{
 }
 .login-container a:hover{
     color: #8387ff;
+}
+.modal-sucess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    background-color: #12b857;
+    border-radius: 5px;
+    padding: 30px 50px;
+    width: 530px;
+    max-width: 100%;
+    text-align: center;
+}
+.modal h1{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.modal p{
+    margin-bottom: 20px;
+}
+#modal-sucess{
+    color: #fff;
+}
+#close{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #084621;
+    color: #fff;
+    cursor: pointer;
 }
